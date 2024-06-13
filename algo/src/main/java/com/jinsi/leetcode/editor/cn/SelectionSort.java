@@ -4,6 +4,9 @@ package com.jinsi.leetcode.editor.cn;
 
 import java.util.Arrays;
 
+/**
+ * 选择排序
+ */
 public class SelectionSort {
     public static void main(String[] args) {
         Solution solution = new SelectionSort().new Solution();
@@ -53,7 +56,7 @@ public class SelectionSort {
             for (int i = 0; i < nums.length - 1; i++) {
                 // 最大元素的索引
                 int maxIndex = i;
-                for (int j = i + 1; j < nums.length; j++) {
+                for (int j = i + 1; j <= nums.length - 1; j++) {
                     if (nums[j] > nums[maxIndex]) {
                         maxIndex = j;
                     }
