@@ -50,9 +50,14 @@
 
 package com.jinsi.leetcode.editor.cn;
 
+import java.util.Arrays;
+
 public class TwoSum {
     public static void main(String[] args) {
         Solution solution = new TwoSum().new Solution();
+        int[] nums = {2, 7, 11, 15};
+        int[] result = solution.twoSum(nums, 9);
+        System.out.println(Arrays.toString(result));
     }
 
     //leetcode submit region begin(Prohibit modification and deletion)
